@@ -1,0 +1,14 @@
+c:\Users\es0765\Desktop\Disco\bin\Debug\net7.0\Disco.exe
+c:\Users\es0765\Desktop\Disco\bin\Debug\net7.0\Disco.deps.json
+c:\Users\es0765\Desktop\Disco\bin\Debug\net7.0\Disco.runtimeconfig.json
+c:\Users\es0765\Desktop\Disco\bin\Debug\net7.0\Disco.dll
+c:\Users\es0765\Desktop\Disco\bin\Debug\net7.0\Disco.pdb
+c:\Users\es0765\Desktop\Disco\obj\Debug\net7.0\Disco.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\es0765\Desktop\Disco\obj\Debug\net7.0\Disco.AssemblyInfoInputs.cache
+c:\Users\es0765\Desktop\Disco\obj\Debug\net7.0\Disco.AssemblyInfo.cs
+c:\Users\es0765\Desktop\Disco\obj\Debug\net7.0\Disco.csproj.CoreCompileInputs.cache
+c:\Users\es0765\Desktop\Disco\obj\Debug\net7.0\Disco.dll
+c:\Users\es0765\Desktop\Disco\obj\Debug\net7.0\refint\Disco.dll
+c:\Users\es0765\Desktop\Disco\obj\Debug\net7.0\Disco.pdb
+c:\Users\es0765\Desktop\Disco\obj\Debug\net7.0\Disco.genruntimeconfig.cache
+c:\Users\es0765\Desktop\Disco\obj\Debug\net7.0\ref\Disco.dll
