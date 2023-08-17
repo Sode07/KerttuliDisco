@@ -6,25 +6,26 @@ class Program
     static void Main(string[] args)
     {
         // Define the path to the startup script
-        string startupScript = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
-                                           @"Microsoft\Windows\Start Menu\Programs\Startup\startup_script.bat");
+
+        string startupScript = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"Microsoft\Windows\Start Menu\Programs\Startup\startup_script.bat");
 
         // Generate the startup script and the VBScript
         using (StreamWriter writer = new StreamWriter(startupScript))
         {
             writer.WriteLine("@echo off");
             writer.WriteLine(":: Define the path to the VBScript file");
-            writer.WriteLine("set \"vbs_script=%%temp%%\\fullscreen.vbs\"");
+
+            writer.WriteLine("set \"vbs_script=%temp%\\fullscreen.vbs\"");
             writer.WriteLine(":: Generate and execute the VBScript");
             writer.WriteLine("(echo Set objShell = CreateObject^(\"WScript.Shell\"^)");
             writer.WriteLine("echo objShell.AppActivate \"Command Prompt\"");
             writer.WriteLine("echo WScript.Sleep 500");
-            writer.WriteLine("echo objShell.SendKeys \"^%%^{F11}^%%\"");
-            writer.WriteLine(") > \"%%vbs_script%%\"");
+            writer.WriteLine("echo objShell.SendKeys \"{F11}\"");
+            writer.WriteLine(") > \"%vbs_script%\"");
             writer.WriteLine(":: Run the VBScript");
-            writer.WriteLine("wscript \"%%vbs_script%%\"");
+            writer.WriteLine("wscript \"%vbs_script%\"");
             writer.WriteLine(":: Clean up the temporary VBScript");
-            writer.WriteLine("del \"%%vbs_script%%\"");
+            writer.WriteLine("del \"%vbs_script%\"");
             writer.WriteLine(":A");
             writer.WriteLine("color f1");
             writer.WriteLine("color 12");
